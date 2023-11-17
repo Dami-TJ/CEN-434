@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCGceKNIVNO8HH4hQa1ck77DBsSEcc3TiBqA&usqp=CAU.jpg");
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #E6E6FA;
+      border-radius: 50px;
+	opacity: 0.8;
+      box-shadow: 0 2px 5px rgba(255,255,255,0.5);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #333333;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+.upload-icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.upload-icon img {
+  width: 50px; /* adjust the size as needed */
+  height: 50px; /* adjust the size as needed */
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Homemakers Club</h1>
+    <form>
+  <label for="image" class="upload-icon">
+    <img src="path/to/image-icon.png" alt="Upload Image">
+    <input type="file" id="image" name="image">
+  </label>
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" required>
+	
+       <label for="">Matric Number</label>
+         <input type="text" id= "Matric Number" name= "Matric Number" required>
+	
+ <label for="telegram">Telegram Number:</label>
+        <input type="text" id="telegram" name="telegram" placeholder="Enter your Telegram number" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="level">Level</label>
+      <input type="text" id="level" name="level" required>
+		
+
+      <label for="hall">Hall</label>
+      <select id="hall" name="hall" required>
+		
+		<option value="">Select hall</option>
+                <option value="">John</option>
+                <option value="">Peter</option>
+                <option value="">Paul</option>
+                <option value="">Joseph</option>
+                <option value="">Daniel</option>
+                <option value="">Esther</option>
+                <option value="">Deborah</option>
+                <option value="">Mary</option>
+                <option value="">Lydia</option>
+                <option value="">Dorcas</option>
+		</select>
+      <label for="room">Room Number</label>
+      <input type="text" id="room" name="room" required>
+
+      <label for="reason">Reason for Joining Club</label>
+      <textarea id="reason" name="reason" rows="4" required></textarea>
+
+      <input type="submit" value="Join Club">
+    </form>
+  </div>
+</body>
+</html>
+
+

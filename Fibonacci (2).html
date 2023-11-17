@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Fibonnaci Series</title>
+		<style>
+			body{
+				overflow-x: hidden;
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 5vh;
+				font-family: "poppins";
+			}
+		</style>
+	</head>
+	<body>
+			<h1>Fibonnaci Series 92</h1>
+			
+			<button id="btn">Calculate</button>
+			<p id="out"></p>
+		<script>
+			const output = document.getElementById('out');
+			const n = 92
+			const btn= document.getElementById('btn');
+					btn.addEventListener("click", ()=>{
+						const fibo = [0,1]
+				for(let i=2; i<n;i++){
+					fibo[i] = fibo[i-1]+ fibo[i-2]
+				}
+				for(let i=0; i<n;i++){
+					const para = document.createElement('b')
+					para.innerHTML = fibo[i] + ",  "
+					output.appendChild(para)
+				}
+					
+					})
+			
+		</script>
+	</body>
+</html>
